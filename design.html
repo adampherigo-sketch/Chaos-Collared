@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Design Your Collar | Chaos Collared</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/design.css" />
+</head>
+
+<body class="design-page">
+
+  <div class="lightning-bg"></div>
+
+  <header class="site-header">
+
+    <a href="index.html" class="brand-mark">
+      <img src="images/chaos-collars-logo.png" alt="Chaos Collared Logo" />
+      <span>Chaos<br>Collared</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="design.html" class="active">Design Your Collar</a>
+      <a href="colors.html">Colors</a>
+      <a href="sizing.html">Sizing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-icons">
+      <span>♡</span>
+      <span>🛒</span>
+    </div>
+
+  </header>
+
+  <main class="design-main">
+
+    <section class="design-hero">
+      <p class="eyebrow">Build your chaos</p>
+
+      <h1>Design Your Collar</h1>
+
+      <p>
+        Start with silver links, choose your style, pick your colors, and preview your custom collar request.
+      </p>
+    </section>
+
+    <section class="builder-layout">
+
+      <section class="builder-panel">
+
+        <h2>Customize</h2>
+
+        <label for="collar-style">Collar Style</label>
+        <select id="collar-style">
+          <option value="single">Single Row</option>
+          <option value="double">Double Row</option>
+          <option value="center-stripe">Center Stripe</option>
+          <option value="sectioned">Sectioned Pattern</option>
+          <option value="wide">Wide Collar</option>
+        </select>
+
+        <label for="collar-length">Collar Length</label>
+        <select id="collar-length">
+          <option value="12">12 inches</option>
+          <option value="14">14 inches</option>
+          <option value="16" selected>16 inches</option>
+          <option value="18">18 inches</option>
+          <option value="20">20 inches</option>
+          <option value="custom">Custom Length</option>
+        </select>
+
+        <label for="main-color">Main Link Color</label>
+        <select id="main-color">
+          <option value="silver" selected>Silver</option>
+          <option value="black">Black</option>
+          <option value="blue">Electric Blue</option>
+          <option value="purple">Purple</option>
+          <option value="pink">Pink</option>
+          <option value="red">Red</option>
+        </select>
+
+        <label for="accent-color">Accent Link Color</label>
+        <select id="accent-color">
+          <option value="blue" selected>Electric Blue</option>
+          <option value="silver">Silver</option>
+          <option value="black">Black</option>
+          <option value="purple">Purple</option>
+          <option value="pink">Pink</option>
+          <option value="red">Red</option>
+        </select>
+
+        <button class="builder-button" id="update-preview">
+          Update Preview
+        </button>
+
+      </section>
+
+      <section class="preview-panel">
+
+        <h2>Collar Preview</h2>
+
+        <div class="collar-preview" id="collar-preview"></div>
+
+        <div class="preview-details">
+          <p><strong>Style:</strong> <span id="preview-style">Single Row</span></p>
+          <p><strong>Length:</strong> <span id="preview-length">16 inches</span></p>
+          <p><strong>Main Color:</strong> <span id="preview-main">Silver</span></p>
+          <p><strong>Accent Color:</strong> <span id="preview-accent">Electric Blue</span></p>
+        </div>
+
+        <a href="contact.html" class="btn-primary request-button">
+          Request This Design
+        </a>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/collar-builder.js"></script>
+
+</body>
+
+</html>
