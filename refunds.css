@@ -1,0 +1,102 @@
+/* ================================
+   CHAOS COLLARED
+   REFUNDS PAGE
+================================ */
+
+.refunds-main {
+  min-height: 100vh;
+  padding: 140px 60px 90px;
+}
+
+.refunds-hero {
+  max-width: 980px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.refunds-hero h1 {
+  color: var(--silver);
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 900;
+
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 18px rgba(0, 140, 255, 0.7),
+    0 0 42px rgba(0, 140, 255, 0.45);
+}
+
+.refunds-hero p {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: rgba(255,255,255,0.78);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.refunds-grid {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+
+.refunds-card {
+  padding: 36px;
+  border-radius: 24px;
+
+  border: 1px solid rgba(0, 170, 255, 0.22);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0,0,0,0.82),
+      rgba(0,20,36,0.58)
+    );
+
+  box-shadow:
+    inset 0 0 28px rgba(0, 140, 255, 0.06),
+    0 0 22px rgba(0, 140, 255, 0.14);
+
+  transition: 0.35s ease;
+}
+
+.refunds-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(85, 200, 255, 0.72);
+
+  box-shadow:
+    0 0 18px rgba(0, 140, 255, 0.55),
+    0 0 44px rgba(0, 140, 255, 0.24);
+}
+
+.refunds-card h2 {
+  color: var(--silver);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+
+  text-shadow:
+    0 0 12px rgba(0, 140, 255, 0.5);
+}
+
+.refunds-card p {
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .refunds-main {
+    padding: 130px 24px 70px;
+  }
+
+  .refunds-grid {
+    grid-template-columns: 1fr;
+  }
+}
